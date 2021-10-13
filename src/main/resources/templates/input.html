@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>Flight Information Display</title> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+	</head>
+	<body>
+		<h1>Flight Information Display System</h1>
+		<form method="GET" th:action="@{/flights}">
+		
+		    <div>
+		        <label for="date">Enter a date:</label>
+		        <input type="date" id="date" name="date" th:value="*{date}" required/>
+		        <button type="submit" class="btn btn-primary">Get Flight Details</button>
+		    </div>
+		</form>
+	</body>
+</html>

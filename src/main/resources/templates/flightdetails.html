@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head> 
+	    <title>Flight Information Display</title> 
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+	</head>
+	<body>
+		<div>
+	    	<h1>Flight Details</h1>
+	            
+	            <!--display flight list-->
+           <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Flight No</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Destination Airport IATA</th>
+                    <th scope="col">Departure Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="flight, i : ${flights}">
+                    <th scope="row" th:text="${i.index + 1}"></th>
+                    <td th:text="${flight.flightNo}"></td>
+                    <td th:text="${flight.destination}"></td>
+                    <td th:text="${flight.destIata}"></td>
+                    <td th:text="${flight.deptTime}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+	</body>
+</html>
