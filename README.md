@@ -19,6 +19,5 @@ Code organize as this:
 Getting started
 ---------------
 You need to install Java8, eclipse/intellij, maven.  Once the application is imported to Eclipse (File->Import->Maven->Existing Maven Projects-> Navigate to the Spring boot project location and select pom.xml)
-	
 	• Test cases be executed by selecting 'Run as Junit test' on the class 'FlightinfoDisplayApplicationTests' .
-  • To access the webapp, select 'Run as' on the SpringbootApplication class 'FlightinfoDisplayApplication' and then open a web browser and type 'http://localhost:8080/input'
+  	• To access the webapp, select 'Run as' on the SpringbootApplication class 'FlightinfoDisplayApplication' and then open a web browser and type 'http://localhost:8080/input'
