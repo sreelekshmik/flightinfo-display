@@ -9,11 +9,14 @@ Application provides an interface where user can enter the date. Flights details
 Application use Spring boot.
 
 Code organize as this:
+
 	1. src/main/java - model, controller, service and helper classes
+	
 	2. Src/main/resources - 
 		a. Input CSV file 'flights.csv' with flight details
 		b. /static - CSS files
 		c. /templates - html files
+		
 	3. src/test/java - Test classes
 
 Getting started
